@@ -1,15 +1,17 @@
 <script>
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import CharactersList from "./components/CharactersList.vue";
+
 export default {
-  data() {
-    return {
-      title: "yughi oh",
-    };
-  },
+  components: { AppHeader, AppMain, CharactersList },
 };
 </script>
 
 <template>
-  <h1 class="text-danger">{{ title }}</h1>
+  <AppHeader />
+  <AppMain />
+  <CharactersList />
 </template>
 
 <style lang="scss"></style>
